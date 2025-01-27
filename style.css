@@ -84,6 +84,31 @@ nav a.active{
         border-bottom: 0.5rem solid #b74b4b;
     }
 }
+/* Responsive Header for Mobile Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative; /* Avoid fixed positioning issues */
+    }
+
+    header .logo {
+        font-size: 2.5rem; /* Adjust logo size */
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        font-size: 1.6rem; /* Smaller font for links */
+    }
+}
+
 section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
