@@ -11,30 +11,48 @@
     <header>
         <a href="#" class="logo">Revana Siddappa</a>
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="about-me.html" >About Me</a>
-            <a href="projects.html" >Projects</a>
-            <a href="education.html" >Education</a>
-            <a href="experience.html" >Experience</a>
-            <a href="contact.html" >Contact</a>
+            <a href="#" class="active">Home</a>
+            <a href="about-me.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <!-- Hamburger Menu Button -->
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
     </header>
+
     <section class="home">
         <div class="home-img">
-            <img src="siddu.jpg" alt="">
+            <img src="siddu.jpg" alt="Profile">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Revana Siddappa</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/hadapada-revanasiddappa1819/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/hadapadarevanasiddappa"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <a href="mailto:someone@example.com" class="btn">Hire me</a>
         </div>
     </section>
+
+    <script>
+        // Toggle mobile menu
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuBtn.innerHTML = nav.classList.contains('active') 
+                ? '<i class="fa fa-times"></i>' 
+                : '<i class="fa fa-bars"></i>';
+        });
+    </script>
 </body>
 </html>
