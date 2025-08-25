@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header Styles with Semi-Transparent Background */
+header {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9%; /* Keep the previous header spacing */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Slight shadow for the header */
+}
+
+header .logo {
+    font-size: 3rem; /* Font size as in the original design */
+    color: #b74b4b;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    gap: 4rem; /* Spacing between the navigation items */
+}
+
+header nav a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover, header nav a.active {
+    color: #b74b4b;
+    transform: translateY(-5px); /* Hover effect for better interactivity */
+}
+
+/* Body and Project Section */
+.container {
+    max-width: 1200px;
+    margin: 100px auto; /* Add space between the header and content */
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #b74b4b;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.project {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(183, 75, 75, 0.6);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #b74b4b;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #b74b4b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.github-link i {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .github-link {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,164 @@
+/* Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Body Styling */
+body {
+    background-color: #111;
+    color: white;
+    padding: 0 20px;
+}
+
+/* Typing Effect */
+.intro-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.intro-text span {
+    color: #b74b4b;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.typing {
+    display: inline-block;
+    border-right: 3px solid #b74b4b;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Heading Styles */
+h1, h2 {
+    text-align: center;
+    color: #b74b4b;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Card Layout for Skills */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(33% - 20px); /* Flex item size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: #b74b4b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.4rem;
+    color: #ddd;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #b74b4b;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: #222;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    background-color: #b74b4b;
+    transform: scale(1.2);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+}
+
+footer a {
+    color: #b74b4b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #b74b4b;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #fff;
+    color: #b74b4b;
+}

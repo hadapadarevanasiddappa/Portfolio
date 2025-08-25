@@ -1,0 +1,26 @@
+*{
+    text-align: left;
+}
+body{
+    
+    padding: 50 50 50 50;
+    overflow-x: hidden;
+    background-color: black;
+    color: #b74b4b;
+    background-position: cover;
+    background-size: cover;
+}
+.box{
+    width: 550px;
+    height: 340px;
+    color:white;
+    background-color:#b74b4b;
+    position: relative;
+    top: 15svh;
+    left: 75vh;
+    align-items: center;
+    border-radius: 20%;
+    box-shadow: 0 0 65px
+    #900C3F, 0px 0px 15px
+    #900C3F ;
+}
